@@ -34,7 +34,7 @@ async function cnMain() {
     //     height: 400,
     //     deviceScaleFactor: 1
     //   });
-    await page.goto("https://passport.bilibili.com/login", {
+    await page.goto("https://bilibili.com", {
         waitUntil: "networkidle2",
     });
     await page.screenshot({ path: "public/image.png" });
