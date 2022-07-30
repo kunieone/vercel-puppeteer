@@ -15,6 +15,7 @@ async function getBrowser() {
             args: chrome_aws_lambda_1.default.args,
             executablePath: await chrome_aws_lambda_1.default.executablePath,
             headless: chrome_aws_lambda_1.default.headless,
+            defaultViewport: { height: 853, width: 1680 },
             userDataDir: config_1.default.data_path,
         }
         : {

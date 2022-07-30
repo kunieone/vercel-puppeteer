@@ -12,6 +12,7 @@ export async function getBrowser(): Promise<Browser> {
           args: chrome.args,
           executablePath: await chrome.executablePath,
           headless: chrome.headless,
+          defaultViewport: { height: 853, width: 1680 },
           userDataDir: config.data_path,
         }
       : {

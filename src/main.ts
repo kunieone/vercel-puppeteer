@@ -36,6 +36,7 @@ async function cnMain() {
 
   //   let info = await getMyInfo(browser);
   const browser = await getBrowser();
+
   const page = await browser.newPage();
 
   //   await page.setViewport({
