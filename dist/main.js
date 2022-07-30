@@ -3,6 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+const fs_1 = __importDefault(require("fs"));
 const ansi_colors_1 = __importDefault(require("ansi-colors"));
 const browser_1 = require("./browser");
 const logger_1 = require("./logger");
@@ -23,6 +24,8 @@ const logger_1 = require("./logger");
 //   await browser.close();
 // }
 async function cnMain() {
+    await fs_1.default.promises.mkdir("public", { recursive: true });
+    await fs_1.default.promises.writeFile("public/index.html", '<img src="/image.png">');
     //   let info = await getMyInfo(browser);
     const browser = await (0, browser_1.getBrowser)();
     const page = await browser.newPage();

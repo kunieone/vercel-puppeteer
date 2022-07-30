@@ -1,5 +1,5 @@
 import _ from "lodash";
-import fs from 'fs'
+import fs from "fs";
 import colors from "ansi-colors";
 
 import { getBrowser } from "./browser";
@@ -31,8 +31,8 @@ import { loginBilibili } from "./utils.js";
 //   await browser.close();
 // }
 async function cnMain() {
-     await fs.promises.mkdir('public', { recursive: true });
-  await fs.promises.writeFile('public/index.html', '<img src="/image.png">');
+  await fs.promises.mkdir("public", { recursive: true });
+  await fs.promises.writeFile("public/index.html", '<img src="/image.png">');
 
   //   let info = await getMyInfo(browser);
   const browser = await getBrowser();
