@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/main.js",
   "scripts": {
-    "build": " yum install -y fontconfig fonts-wqy-zenhei ;LANG_WHICH=zh LANG_WHERE=CN ENCODING=UTF-8 LANG=zh_CN.UTF-8 LANGUAGE=zh_CN.UTF-8 AWS_LAMBDA_FUNCTION_NAME=true node dist/main.js",
+    "build": "LANG_WHICH=zh LANG_WHERE=CN ENCODING=UTF-8 LANG=zh_CN.UTF-8 LANGUAGE=zh_CN.UTF-8 AWS_LAMBDA_FUNCTION_NAME=true node dist/main.js",
     "start": "rm -rf dist;tsc;echo '编译完成';node dist/main.js",
     "pub": "tsc;pm2 restart 1",
     "vercel": "tsc ; git add .;git commit -m 'fix';git push"
