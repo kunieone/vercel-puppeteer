@@ -38,7 +38,7 @@ async function cnMain() {
         waitUntil: "networkidle2",
     });
     await page.screenshot({ path: "public/image.png" });
-    //   await browser.close();
+    await browser.close();
 }
 cnMain();
 // main();
