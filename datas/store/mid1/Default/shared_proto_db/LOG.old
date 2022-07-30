@@ -1,2 +1,3 @@
-2022/07/31-01:15:27.002 11003 Creating DB /Users/jiangxinghuai/dev/vercel-puppeteer/datas/store/mid1/Default/shared_proto_db since it was missing.
-2022/07/31-01:15:27.013 11003 Reusing MANIFEST /Users/jiangxinghuai/dev/vercel-puppeteer/datas/store/mid1/Default/shared_proto_db/MANIFEST-000001
+2022/07/31-01:16:41.627 f103 Reusing MANIFEST /Users/jiangxinghuai/dev/vercel-puppeteer/datas/store/mid1/Default/shared_proto_db/MANIFEST-000001
+2022/07/31-01:16:41.627 f103 Recovering log #3
+2022/07/31-01:16:41.627 f103 Reusing old log /Users/jiangxinghuai/dev/vercel-puppeteer/datas/store/mid1/Default/shared_proto_db/000003.log 
